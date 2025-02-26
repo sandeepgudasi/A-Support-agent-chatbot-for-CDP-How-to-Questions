@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDP Support Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">CDP Assistant</div>
+                <div class="platform-selector">
+                    <button class="platform-btn active" data-platform="segment">Segment</button>
+                    <button class="platform-btn" data-platform="mparticle">mParticle</button>
+                    <button class="platform-btn" data-platform="lytics">Lytics</button>
+                    <button class="platform-btn" data-platform="zeotap">Zeotap</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <i class="fas fa-robot"></i>
+                        <div class="message-content">
+                            Hello! I'm your CDP Assistant. How can I help you today?
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="userInput" placeholder="Ask me how to do something...">
+                    <button id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
